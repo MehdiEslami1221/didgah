@@ -1,0 +1,18 @@
+[Unit]
+Description=Urban Survey Next.js
+After=network.target
+[Service]
+Type=simple
+User=survey
+Group=survey
+WorkingDirectory=/opt/urban-survey
+Environment=NODE_ENV=production
+Environment=HOME=/home/survey
+ExecStart=/usr/bin/node /opt/urban-survey/node_modules/next/dist/bin/next start --hostname 127.0.0.1 --port 3000
+Restart=on-failure
+RestartSec=5
+NoNewPrivileges=true
+PrivateTmp=true
+UMask=0077
+[Install]
+WantedBy=multi-user.target

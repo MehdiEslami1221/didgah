@@ -1,0 +1,17 @@
+node_modules/
+.next/
+.env*
+!.env.example
+data/
+backups/
+*.tsbuildinfo
+*.log
+*.sqlite
+*.sqlite-*
+*.db
+*.db-*
+*.pdf
+exports/
+reports/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,53 @@
+{
+  "name": "didgah",
+  "version": "1.0.0",
+  "description": "Persian research survey platform with SQLite persistence, response analytics and PDF reports",
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "build": "next build --webpack",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "test": "node --import tsx --test tests/*.test.ts",
+    "setup": "node scripts/setup.mjs",
+    "pdf:install": "playwright install chromium",
+    "backup": "node scripts/backup.mjs",
+    "test:pdf": "node --import tsx scripts/test-pdf.ts"
+  },
+  "keywords": [
+    "nextjs",
+    "typescript",
+    "sqlite",
+    "survey",
+    "persian",
+    "rtl",
+    "pdf"
+  ],
+  "author": "Mehdi Eslami",
+  "license": "MIT",
+  "dependencies": {
+    "@fontsource/vazirmatn": "^5.3.0",
+    "better-sqlite3": "^13.2.0",
+    "jose": "^6.2.17",
+    "next": "^16.4.6",
+    "playwright": "^1.65.1",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^9.6.0",
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  },
+  "private": true,
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MehdiEslami1221/didgah.git"
+  }
+}
