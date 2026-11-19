@@ -1,5 +1,7 @@
 # Didgah
 
+![Didgah — Urban research surveys, illustrated with a green city skyline](docs/images/didgah-cover.webp)
+
 A Persian research survey platform built with Next.js, TypeScript and SQLite. Didgah collects complete questionnaires, gives the researcher a private dashboard, and produces individual and aggregate PDF reports.
 
 The included questionnaire examines the direct influence between eight factors in urban investment policy implementation and sustainable development. It contains 56 questions, arranged in eight sections of seven questions each.
