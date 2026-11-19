@@ -62,6 +62,7 @@ See [`.env.example`](.env.example) for available settings. Keep actual credentia
 Changes to environment settings require an application restart. They do not require rebuilding the application.
 
 ## Deploy and maintain
+[Project maintenance notes](AGENTS.md) map common changes to their source files and include guidance for existing studies and a reusable Persian handoff prompt.
 
 [Deployment guide](docs/deployment.md) covers Ubuntu, Nginx, HTTPS, systemd, upgrades and migration to another server.
 
